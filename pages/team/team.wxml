@@ -1,0 +1,19 @@
+<view class="header">团队成员</view>
+
+<view class="box">
+  <image class="avatar" src="/images/avatar_liuyx.jpg" mode="widthFix"/>
+  <view class="info">
+    <view class="name">刘宇翔</view>
+    <view>班级：计科20101班</view>
+    <view>QQ: 1517482303</view>
+  </view>
+</view>
+
+<view  class="box">
+  <image class="avatar" src="/images/avatar_yanyu.jpg" mode="widthFix"/>
+  <view class="info">
+    <view class="name">闫宇</view>
+    <view>班级：计科20101班</view>
+    <view>QQ: 2684818903</view>
+  </view>
+</view>

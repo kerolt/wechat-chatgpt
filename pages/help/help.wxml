@@ -1,0 +1,13 @@
+<view class="title">帮助中心</view>
+
+<view class="box">
+  <view>Hello！欢迎使用我们的AI小工具。</view>
+  <view style="border-bottom: 1px solid #ccc;"></view>
+  <view>我们的小程序主要有4个界面:</view>
+  <view>1. 聊天界面：在这里，你可以向AI提问以帮助你解决问题；</view>
+  <view>2. 博客页面：这是我们嵌入的网站，这个网站是开发者本人的一个博客网站，你可以在上面浏览文章；</view>
+  <view>3. 个人界面：这里会展示你的登录信息，如你的头像和名称，你也可以选择退出；如果你还未登录，可以点击登录按钮进而使用完整功能；</view>
+  <view>4. 登录界面：你可以点击头像框和输入框获取你微信的头像和名称以用来登录。</view>
+  <view style="border-bottom: 1px solid #ccc;"></view>
+  <view style="font-weight: 700;">请注意，你需要登录之后才可以使用AI，否则你将无法发送信息！！！</view>
+</view>

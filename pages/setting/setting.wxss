@@ -1,0 +1,136 @@
+page {
+  background-color: #e4e4e4;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.bg {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+
+.bg image {
+  width: 100%;
+}
+
+.base-wrapper {
+  margin: 0 40rpx;
+  margin-bottom: 35rpx;
+  background-color: #fff;
+  border-radius: 17rpx;
+  padding: 30rpx;
+  flex-grow: 1;
+}
+
+.user {
+  display: flex;
+  color: white;
+  padding: 35rpx;
+  margin-bottom: 20rpx;
+}
+
+.user .avatar {
+  width: 130rpx;
+  margin-right: 40rpx;
+  margin-left: 10rpx;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.user .name {
+  align-self: center;
+  font-size: 24px;
+}
+
+.login-container {
+  background-color: #86dae0;
+  color: white;
+  height: 200rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50rpx;
+  border-radius: 17rpx;
+  padding: 6rpx 35rpx;
+  border: 1px solid #ccc; /* 设置边框 */
+    box-shadow: 2px 2px 3px rgba(0,0,0,.3); 
+}
+
+.login-container .text {
+  font-size: 14px;
+}
+
+.login-container .cat {
+  width: 280rpx;
+}
+
+.btn-login {
+  height: 60rpx;
+  width: 200rpx;
+  line-height: 60rpx;
+  background-color: #323334;
+  color: white;
+  font-size: 14px;
+  border-radius: 30rpx;
+}
+
+.btn-logout {
+  align-self: center;
+  display: block;
+  margin-right: 30rpx;
+  color: rgb(253, 253, 253);
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #93E0E5;
+  height: 60rpx;
+  width: 180rpx;
+  line-height: 60rpx;
+  border-radius: 55rpx;
+}
+
+.btn-logout::after {
+  border: none;
+}
+
+.info-container {
+  background-color: #ffffff;
+  color: black;
+  border-radius: 17rpx;
+  padding: 20rpx;
+}
+
+.info-item {
+  display: flex;
+  margin-bottom: 40rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-item:last-child {
+  margin-bottom: 0;
+}
+
+.info-text {
+  background-color: #E6E6FA;
+  border-radius: 25rpx;
+  width: 340rpx;
+  height: 150rpx;
+  line-height: 150rpx;
+  text-align: center;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 3px rgba(0,0,0,.3); 
+}
+
+.icon {
+  width: 200rpx;
+}
+
+.tips {
+  margin-top: 20rpx;
+  text-align: center;
+  color: rgb(209, 208, 208);
+}

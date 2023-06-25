@@ -1,0 +1,4 @@
+@import './miniprogram_npm/weui-miniprogram/weui-wxss/dist/style/weui.wxss';
+page {
+  font-family: '霞鹜文楷', '宋体', serif;
+}

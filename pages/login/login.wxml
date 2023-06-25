@@ -1,0 +1,16 @@
+<view class="bg">
+  <image src="/images/login_bg.jpg" mode="widthFix" />
+</view>
+<view class="container">
+  <view class="head-text">Hi! Welcome!</view>
+
+  <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+    <image class="avatar" mode="widthFix" src="{{avatarUrl}}"></image>
+  </button>
+
+  <input type="nickname" class="name" bind:change="inputNickName" placeholder="请输入昵称" />
+
+  <button bindtap="login" class="login-btn">登录</button>
+
+  <view class="tips">点击头像和输入框可以获取你的微信头像和名称噢</view>
+</view>

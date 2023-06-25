@@ -1,0 +1,15 @@
+<view class="base-container">
+  <view class="robot-img-container">
+    <image src="/images/logo.png" mode="widthFix"/>
+  </view>
+
+  <view class="text">
+    <view>Yo Ho! 很高兴遇见你！</view>
+    <view>快开启你的解惑之旅吧！</view>
+  </view>
+
+  <view> 
+    <button class="btn-start" bindtap="gotoQuestion">Let's Go!</button>
+  </view>
+  
+</view>

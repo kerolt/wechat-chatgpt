@@ -1,0 +1,42 @@
+<view class="tips">tips: 长按AI的聊天框可以复制文本哦</view>
+<view class="page">
+    <scroll-view class="box-msg-list" scroll-x="{{false}}" scroll-y="{{true}}" scroll-with-animation="{{true}}" scroll-top="{{scrollTop}}">
+        <view class="list">
+            <block wx:for="{{lists}}" wx:key="index">
+                <!-- gpt回答 -->
+                <view class="message" data-index="{{index}}" bindlongpress="copyText" data-text="{{item.message}}" wx:if="{{item.user == 'ChatGPT'}}">
+                    <view class="avatar"><image mode="widthFix" src="/images/ic_chatgpt_logo.png"></image></view>
+                    <view class="text">
+                        <view wx:for="{{item.message}}" wx:for-item="text" wx:key="index">
+                            <text decode="{{true}}">{{text}}</text>
+                        </view>
+                    </view>
+                </view>
+
+                <!-- 个人提问 -->
+                <view class="message-person" data-index="{{index}}" bindlongpress="copyText" wx:else>
+                    <view class="text">
+                        <view wx:for="{{item.message}}" wx:for-item="text" wx:key="index">
+                            <text decode="{{true}}">{{text}}</text>
+                        </view>
+                    </view>
+                    <view class="avatar" style="background: #9aa37e;">
+                      <text>{{item.user}}</text>
+                    </view>
+                </view>
+            </block>
+        </view>
+        
+    </scroll-view>
+
+    <!-- 问题输入框 -->
+    <view class="box-input">
+        <view class="input">
+            <textarea type="text" model:value="{{message}}" confirm-type="send" bindconfirm="sendConfirm" fixed='true' contenteditable="true" contenteditable="true" auto-height="true" placeholder="输入你的问题"
+            bindinput="onTextAreaChange"></textarea>
+            <button class="btn-send {{isDisable ? '' : 'btn-disable'}}" bindtap="sendText">
+              <image mode="widthFix" src="/images/ic_send.png"></image>
+            </button>
+        </view>
+    </view>
+</view>

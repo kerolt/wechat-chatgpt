@@ -1,0 +1,2 @@
+<!--pages/website/website.wxml-->
+<web-view src="https://liuyx.cc"></web-view>

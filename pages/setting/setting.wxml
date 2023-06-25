@@ -1,0 +1,39 @@
+<view class="bg">
+  <image src="/images/setting_bg.png" mode="widthFix" />
+</view>
+
+<view class="user">
+  <image src="{{avatar}}" mode="widthFix" class="avatar" />
+  <view class="name">{{nickname}}</view>
+  <button class="btn-logout" bindtap="logout"  wx:if="{{isLogin}}">退出登录</button>
+</view>
+
+<view class="base-wrapper">
+  <view class="login-container" wx:if="{{!isLogin}}">
+    <view class="text">
+      <view style="margin-bottom: 15rpx; font-weight: bold; font-size: 17px;">享受更多特权</view>
+      <view>人工智能 全场景问答 最强AI</view>
+    </view>
+    <button class="btn-login" bindtap="gotoLogin">立即登录</button>
+  </view>
+
+  <view class="login-container" wx:else>
+    <view class="text">
+      <view style="font-weight: bold; font-size: 14px;">你已经成功登录，快去解决你的问题吧！</view>
+    </view>
+    <image class="cat" src="/images/cat.png" mode="widthFix"/>
+  </view>
+
+  <view class="info-container">
+    <view class="info-item team" data-pagename="team" bindtap="gotoInfoItem">
+      <image class="icon" src="/images/team.png" mode="widthFix" style="margin-right: 30rpx;"/>
+      <view class="info-text">我的团队</view>
+    </view>
+    <view class="info-item help"  data-pagename="help" bindtap="gotoInfoItem">
+      <view class="info-text">帮助中心</view>
+      <image class="icon" src="/images/help.png" mode="widthFix"  style="margin-left: 30rpx;"/>
+    </view>
+  </view>
+
+  <view class="tips">提示：请不要向小AI询问违法内容哦</view>
+</view>

@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/setting/setting",
+    "pages/login/login",
+    "pages/help/help",
+    "pages/team/team",
+    "pages/website/website"
+  ],
+  "window": {
+    "navigationBarTitleText": "ChatGPT聊天小工具",
+    "navigationBarBackgroundColor": "#343541",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "selectedColor": "#4e7ca1",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "提问",
+        "iconPath": "images/search.png",
+        "selectedIconPath": "images/search.png"
+      },
+      {
+        "pagePath": "pages/website/website",
+        "text": "博客",
+        "iconPath": "images/blog.png",
+        "selectedIconPath": "images/blog.png"
+      },
+      {
+        "pagePath": "pages/setting/setting",
+        "text": "个人",
+        "iconPath": "images/setting.png",
+        "selectedIconPath": "images/setting.png"
+      }
+    ]
+  }
+}

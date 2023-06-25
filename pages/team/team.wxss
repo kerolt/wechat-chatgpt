@@ -1,0 +1,35 @@
+page {
+  height: 100%;
+  background-color: #ececec;
+}
+
+.header {
+  text-align: center;
+  font-size: 24px;
+  margin: 40rpx 0;
+  font-weight: bold;
+}
+
+.box {
+  padding: 30rpx 40rpx;
+  margin: 80rpx 40rpx;
+  border-radius: 30rpx;
+  display: flex;
+  background-color: white;
+}
+
+.box .avatar {
+  width: 248rpx;
+  border-radius: 30rpx;
+  border: none;
+}
+
+.info {
+  margin-left: 40rpx;
+}
+
+.info .name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 18rpx;
+}

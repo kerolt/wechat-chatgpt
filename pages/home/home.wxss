@@ -1,0 +1,47 @@
+page {
+  background-color: #eff5ff;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.robot-img-container image {
+  display: block;
+  width: 300rpx;
+  margin: 25rpx auto;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.text {
+  background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0));
+  animation-name: fadeIn;
+  animation-duration: 4s;
+  transition: opacity 1s ease-in-out;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bolder;
+  margin-bottom: 30rpx;
+}
+
+.btn-start {
+  background-color: #FFD939;
+  color: #fff;
+  font-size: 20px;
+  width: 50%;   
+  border-radius: 250rpx;
+  box-sizing: border-box;
+}
+
+.btn-start::after {
+  border: none;
+}

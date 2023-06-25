@@ -1,0 +1,21 @@
+page {
+  background-color: #ececec;
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  margin: 50rpx 0;
+  font-weight: bold;
+}
+
+.box {
+  padding: 25rpx 40rpx;
+  margin: 10rpx 40rpx;
+  border-radius: 30rpx;
+  background-color: white;
+}
+
+.box view {
+  margin: 15rpx 0;
+}

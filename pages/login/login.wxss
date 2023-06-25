@@ -1,0 +1,76 @@
+page {
+  background-color: #eff5ff;
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.bg image {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  padding: 50rpx;
+}
+
+.head-text {
+  margin-top: 60rpx;
+  text-align: center;
+  font-size: 26px;
+  color: #343541;
+}
+
+.avatar-wrapper {
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  background-color: rgba(255, 255, 255, 0.0);
+  border: none;
+  padding: 10rpx 0;
+}
+
+.avatar-wrapper::after {
+  border: none;
+}
+ 
+.avatar {
+  display: block;
+  width: 200rpx;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  box-shadow: 1px 2px 3px rgba(0,0,0,.2); 
+}
+
+.name{
+  box-sizing: border-box;
+  padding-left: 40rpx;
+  background-color: rgb(230, 230, 230);
+  height: 100rpx;
+  margin-bottom: 45rpx;
+  border-radius: 20rpx;
+  border: 1px solid #ccc;
+  box-shadow: 1px 2px 3px rgba(0,0,0,.2); 
+}
+
+.login-btn {
+  background-color: #86dae0;
+  border: 1px solid #ccc;
+  box-shadow: 1px 2px 3px rgba(0,0,0,.2); 
+  border-radius: 20rpx;
+}
+
+.tips {
+  font-size: 13px;
+  text-align: center;
+  margin-top: 20rpx;
+  color:rgb(104, 104, 104);
+}
