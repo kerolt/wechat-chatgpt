@@ -72,7 +72,7 @@ Page({
     this.inputUserMessage(msg)
 
     wx.request({
-      url: 'http://47.243.84.92:9901/system/chat/chat',
+      url: 'XXX',
       method: 'POST',
       data: {
         "role": "user",
